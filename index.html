@@ -1,48 +1,129 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
-    <link rel="manifest" href="site.webmanifest">
-    <link rel="mask-icon" href="images/safari-pinned-tab.svg" color="#5bbad5">
-    <meta name="msapplication-TileColor" content="#da532c">
-    <meta name="theme-color" content="#ffffff">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CSS3 loaders and spinner</title>
-
-    <!-- Search Engine -->
-    <meta name="title" content="CSS3 loaders and spinner">
-    <meta name="description" content="A usual situation that we all might face while going through websites is to wait for some progress or something to get loaded. A most common solution in such scenarios is to use a loader,spinner to indicate users  This is a library having a collection of such loaders,spinners . There is no image dependencies in this. It's is done using pure CSS. Hence it is easily customization too">
-    <!-- Schema.org for Google -->
-    <meta itemprop="name" content="CSS3 loaders and spinner">
-    <meta itemprop="description" content="A usual situation that we all might face while going through websites is to wait for some progress or something to get loaded. A most common solution in such scenarios is to use a loader,spinner to indicate users  This is a library having a collection of such loaders,spinners . There is no image dependencies in this. It's is done using pure CSS. Hence it is easily customization too">
-    <meta name="image" content="https://vineethtrv.github.io/loader/images/Loader-screen.png">
-    
-    <!-- Open Graph general (Facebook, Pinterest & Google+) -->
-    <meta name="og:title" content="CSS3 loaders and spinners">
-    <meta name="og:description" content="A usual situation that we all might face while going through websites is to wait for some progress or something to get loaded. A most common solution in such scenarios is to use a loader, spinner to indicate users This is a library having a collection of such loaders, spinners. There are no image dependencies in this. It's is done using pure CSS. Hence it is easily customization too">
-    <meta name="og:image" content="https://vineethtrv.github.io/loader/images/Loader-screen.png">
-    <meta name="og:url" content="https://vineethtrv.github.io/loader/">
-    <meta name="og:site_name" content="CSS3 loaders and spinners">
-    <meta name="fb:admins" content="https://www.facebook.com/vinithtrv">
-    <meta name="og:type" content="website">
-
-    <!-- Twitter -->
-    <meta name="twitter:card" content="summary">
-    <meta name="twitter:title" content="CSS3 loaders and spinners">
-    <meta name="twitter:description" content="A usual situation that we all might face while going through websites is to wait for some progress or something to get loaded. A most common solution in such scenarios is to use a loader, spinner to indicate users This is a library having a collection of such loaders, spinners. There are no image dependencies in this. It's is done using pure CSS. Hence it is easily customization too">
-    <meta property="twitter:url" content="https://vineethtrv.github.io/loader/">
-    <meta name="twitter:creator" content="@vineethtrv">
-    <meta name="twitter:image:src" content="https://vineethtrv.github.io/loader/images/Loader-screen.png">
-
-    <link rel="stylesheet" href="css/styles.css">
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <style>
+      svg {
+        width: 100px;
+        height: 100px;
+        margin: 20px;
+        display: inline-block;
+      }
+    </style>
+  </head>
+  <body>
     <header>
-        <span class="brand"> L &nbsp; ader </span>
+      <span class="brand"> L &nbsp; ader </span>
     </header>
+    <section>
+      <!-- Loader1 -->
+
+      <svg
+        version="1.1"
+        id="L1"
+        xmlns="http://www.w3.org/2000/svg"
+        xmlns:xlink="http://www.w3.org/1999/xlink"
+        x="0px"
+        y="0px"
+        viewBox="0 0 100 100"
+        enable-background="new 0 0 100 100"
+        xml:space="preserve"
+      >
+        <circle
+          fill="none"
+          stroke="#fff"
+          stroke-width="6"
+          stroke-miterlimit="15"
+          stroke-dasharray="14.2472,14.2472"
+          cx="50"
+          cy="50"
+          r="47"
+        >
+          <animateTransform
+            attributeName="transform"
+            attributeType="XML"
+            type="rotate"
+            dur="5s"
+            from="0 50 50"
+            to="360 50 50"
+            repeatCount="indefinite"
+          />
+        </circle>
+        <circle
+          fill="none"
+          stroke="#fff"
+          stroke-width="1"
+          stroke-miterlimit="10"
+          stroke-dasharray="10,10"
+          cx="50"
+          cy="50"
+          r="39"
+        >
+          <animateTransform
+            attributeName="transform"
+            attributeType="XML"
+            type="rotate"
+            dur="5s"
+            from="0 50 50"
+            to="-360 50 50"
+            repeatCount="indefinite"
+          />
+        </circle>
+        <g fill="#fff">
+          <rect x="30" y="35" width="5" height="30">
+            <animateTransform
+              attributeName="transform"
+              dur="1s"
+              type="translate"
+              values="0 5 ; 0 -5; 0 5"
+              repeatCount="indefinite"
+              begin="0.1"
+            />
+          </rect>
+          <rect x="40" y="35" width="5" height="30">
+            <animateTransform
+              attributeName="transform"
+              dur="1s"
+              type="translate"
+              values="0 5 ; 0 -5; 0 5"
+              repeatCount="indefinite"
+              begin="0.2"
+            />
+          </rect>
+          <rect x="50" y="35" width="5" height="30">
+            <animateTransform
+              attributeName="transform"
+              dur="1s"
+              type="translate"
+              values="0 5 ; 0 -5; 0 5"
+              repeatCount="indefinite"
+              begin="0.3"
+            />
+          </rect>
+          <rect x="60" y="35" width="5" height="30">
+            <animateTransform
+              attributeName="transform"
+              dur="1s"
+              type="translate"
+              values="0 5 ; 0 -5; 0 5"
+              repeatCount="indefinite"
+              begin="0.4"
+            />
+          </rect>
+          <rect x="70" y="35" width="5" height="30">
+            <animateTransform
+              attributeName="transform"
+              dur="1s"
+              type="translate"
+              values="0 5 ; 0 -5; 0 5"
+              repeatCount="indefinite"
+              begin="0.5"
+            />
+          </rect>
+        </g>
+      </svg>
+    </section>
     <section data-index="1"><span class="loader-1"></span></section>
     <section data-index="2"><span class="loader-2"></span></section>
     <section data-index="3"><span class="loader-3"></span></section>
@@ -154,12 +235,22 @@
     <section data-index="109"><span class="loader-109">Loading</span></section>
     <section data-index="110"><span class="loader-110">Loading</span></section>
     <section data-index="111"><span class="loader-111">Loading</span></section>
-    <section data-index="112"><span class="loader-112">L &nbsp; ading</span></section>
-    <section data-index="113"><span class="loader-113">Load&nbsp;ng</span></section>
-    <section data-index="114"><span class="loader-114">Load&nbsp;ng</span></section>
+    <section data-index="112">
+      <span class="loader-112">L &nbsp; ading</span>
+    </section>
+    <section data-index="113">
+      <span class="loader-113">Load&nbsp;ng</span>
+    </section>
+    <section data-index="114">
+      <span class="loader-114">Load&nbsp;ng</span>
+    </section>
     <section data-index="115"><span class="loader-115">Loading</span></section>
-    <section data-index="116"><span class="loader-116">Load&nbsp;ng</span></section>
-    <section data-index="117"><span class="loader-117">Load&nbsp;ng</span></section>
+    <section data-index="116">
+      <span class="loader-116">Load&nbsp;ng</span>
+    </section>
+    <section data-index="117">
+      <span class="loader-117">Load&nbsp;ng</span>
+    </section>
     <section data-index="118"><span class="loader-118"></span></section>
     <section data-index="119"><span class="loader-119">Loading</span></section>
     <section data-index="120"><span class="loader-120">Loading</span></section>
@@ -171,29 +262,29 @@
     <section data-index="126"><span class="loader-126"></span></section>
 
     <div class="overlay">
-        <div class="popup">
-            <button class="btn-close">&times;</button>
-            <div class="showcase"></div>
-            <div class="code-content">
-                <div class="code-area">
-                    <div class="code-header">
-                        HTML
-                        <button class="copy" data-id="markup">Copy</button>
-                    </div>
-                    <code id="markup"></code>
-                </div>
-                <div class="code-area">
-                    <div class="code-header">
-                        CSS
-                        <button class="copy" data-id="css">Copy</button>
-                    </div>
-                    <code id='css'></code>
-                </div>
+      <div class="popup">
+        <button class="btn-close">&times;</button>
+        <div class="showcase"></div>
+        <div class="code-content">
+          <div class="code-area">
+            <div class="code-header">
+              HTML
+              <button class="copy" data-id="markup">Copy</button>
             </div>
+            <code id="markup"></code>
+          </div>
+          <div class="code-area">
+            <div class="code-header">
+              CSS
+              <button class="copy" data-id="css">Copy</button>
+            </div>
+            <code id="css"></code>
+          </div>
         </div>
+      </div>
     </div>
-    
+
     <script src="./data.js"></script>
     <script src="./index.js"></script>
-</body>
+  </body>
 </html>
